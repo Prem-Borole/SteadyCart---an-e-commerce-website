@@ -14,7 +14,7 @@ function Orders() {
 
         const res =
             await axios.get(
-                "import.meta.env.VITE_API_URL/api/orders"
+                `${import.meta.env.VITE_API_URL}/api/orders`
             );
 
         setOrders(res.data);
@@ -25,7 +25,7 @@ function Orders() {
 
             await axios.put(
 
-                `import.meta.env.VITE_API_URL/api/orders/${id}`,
+                `${import.meta.env.VITE_API_URL}/api/orders/${id}`,
 
                 { status }
             );

@@ -35,7 +35,7 @@ function Admin() {
         try {
 
             await axios.post(
-                "import.meta.env.VITE_API_URL/api/products/add",
+                `${import.meta.env.VITE_API_URL}/api/products/add`,
                 product
             );
 

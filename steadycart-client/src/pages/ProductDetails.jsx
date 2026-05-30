@@ -11,7 +11,7 @@ function ProductDetails() {
     useEffect(() => {
 
         axios
-            .get(`import.meta.env.VITE_API_URL/api/products/${id}`)
+            .get(`${import.meta.env.VITE_API_URL}/api/products/${id}`)
             .then((res) => {
 
                 setProduct(res.data);

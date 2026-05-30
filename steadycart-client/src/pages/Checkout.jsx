@@ -37,7 +37,7 @@ function Checkout() {
 
                 await axios.post(
 
-                    "import.meta.env.VITE_API_URL/api/orders",
+                    `${import.meta.env.VITE_API_URL}L/api/orders`,
 
                     {
                         customerName,
