@@ -17,7 +17,7 @@ function ProductManagement() {
         try {
 
             const res = await axios.get(
-                "http://localhost:5000/api/products"
+                "import.meta.env.VITE_API_URL/api/products"
             );
 
             setProducts(res.data);
@@ -39,7 +39,7 @@ function ProductManagement() {
         try {
 
             await axios.delete(
-                `http://localhost:5000/api/products/${id}`
+                `import.meta.env.VITE_API_URL/api/products/${id}`
             );
 
             fetchProducts();

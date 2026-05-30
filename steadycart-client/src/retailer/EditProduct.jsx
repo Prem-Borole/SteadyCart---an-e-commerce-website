@@ -27,7 +27,7 @@ function EditProduct() {
     const fetchProduct = async () => {
 
         const res = await axios.get(
-            `http://localhost:5000/api/products/${id}`
+            `import.meta.env.VITE_API_URL/api/products/${id}`
         );
 
         setProduct(res.data);
@@ -46,7 +46,7 @@ function EditProduct() {
         e.preventDefault();
 
         await axios.put(
-            `http://localhost:5000/api/products/${id}`,
+            `import.meta.env.VITE_API_URL/api/products/${id}`,
             product
         );
 

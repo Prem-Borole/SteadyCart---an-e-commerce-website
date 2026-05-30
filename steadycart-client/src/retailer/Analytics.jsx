@@ -21,7 +21,7 @@ function Analytics() {
 
         axios
             .get(
-                "http://localhost:5000/api/analytics"
+                "import.meta.env.VITE_API_URL/api/analytics"
             )
             .then((res) => {
 
