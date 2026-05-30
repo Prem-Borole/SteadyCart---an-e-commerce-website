@@ -12,7 +12,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://your-app.vercel.app"
+      "https://steady-cart-an-e-commerce-website.vercel.app"
     ],
     credentials: true
   })
